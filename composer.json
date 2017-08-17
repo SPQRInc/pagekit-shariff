@@ -1,7 +1,7 @@
 {
   "name": "spqr/shariff",
   "module": "spqr/shariff",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "pagekit-extension",
   "title": "Shariff",
   "description": "Allows you to include social sharing without harming the privacy of your visitors",
