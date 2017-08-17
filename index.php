@@ -56,7 +56,7 @@ return [
 		'lang'            => 'en',
 		'mail_body'       => '',
 		'mail_subject'    => '',
-		'mail_url'        => '',
+		'mail_url'        => 'mailto:',
 		'media_url'       => '',
 		'referrer_track'  => '',
 		'services'        => [

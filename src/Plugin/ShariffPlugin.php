@@ -22,7 +22,7 @@ class ShariffPlugin implements EventSubscriberInterface
 			return;
 		}
 		
-		if (App::request()->attributes->get('_route') == '@blog' && strpos(App::request()->attributes->get('_route'), '@blog/id') === false) {
+		if ((App::request()->attributes->get('_route') == '@blog' || App::request()->attributes->get('_route') == '@blog/page') && strpos(App::request()->attributes->get('_route'), '@blog/id') === false) {
 			return;
 		}
 		
