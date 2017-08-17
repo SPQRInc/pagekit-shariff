@@ -1,0 +1,8 @@
+{
+  "name": "pagekit-shariff",
+  "dependencies": {
+    "shariff": "*",
+    "components-font-awesome": "*"
+  },
+  "private": true
+}

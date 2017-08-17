@@ -1,0 +1,26 @@
+{
+  "name": "spqr/shariff",
+  "module": "spqr/shariff",
+  "version": "1.0.0",
+  "type": "pagekit-extension",
+  "title": "Shariff",
+  "description": "Allows you to include social sharing without harming the privacy of your visitors",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Lossin-Beßler",
+      "homepage": "https://spqr.wtf"
+    }
+  ],
+  "extra": {
+    "icon": "icon.svg",
+    "scripts": "scripts.php"
+  },
+  "require": {
+    "heise/shariff": "^7.0",
+    "php": "^5.6 || ^7.0",
+    "guzzlehttp/guzzle": "^6.1",
+    "psr/log": "^1.0",
+    "zendframework/zend-cache": "^2.7"
+  }
+}
