@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- ADD: Added widget mode
+
 ## 1.0.2
 
 - FIX: Does not show buttons on @blog/page route
