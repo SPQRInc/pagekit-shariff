@@ -1,7 +1,8 @@
 module.exports = [
 	{
 		entry: {
-			"shariff-settings": "./app/components/shariff-settings.vue"
+			"shariff-settings": "./app/components/shariff-settings.vue",
+			"shariff-widget": "./app/components/shariff-widget.vue"
 		},
 		output: {
 			filename: "./app/bundle/[name].js"

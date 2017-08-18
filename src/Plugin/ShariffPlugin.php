@@ -32,10 +32,10 @@ class ShariffPlugin implements EventSubscriberInterface
 		
 		$config = App::module( 'spqr/shariff' )->config();
 		
-		if ( !$config[ 'nodes' ] || in_array(
+		if ( $config['autoinsert'] && (!$config[ 'nodes' ] || in_array(
 				App::request()->attributes->get( '_node' ),
 				$config[ 'nodes' ]
-			) ) {
+			) ) ){
 			
 			$content = $event->getContent();
 			

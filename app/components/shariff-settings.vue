@@ -2,6 +2,12 @@
     <div class="uk-form uk-form-horizontal">
         <h1>{{ 'Shariff Settings' | trans }}</h1>
         <div class="uk-form-row">
+            <label class="uk-form-label">{{ 'Insert Shariff automatically' | trans }}</label>
+            <div class="uk-form-controls uk-form-controls-text">
+                <input type="checkbox" v-model="package.config.autoinsert">
+            </div>
+        </div>
+        <div class="uk-form-row" v-if="package.config.autoinsert">
             <label class="uk-form-label">{{ 'Pages' | trans }}</label>
             <div class="uk-form-controls uk-form-controls-text">
                 <input-tree :active.sync="package.config.nodes"></input-tree>
@@ -183,7 +189,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="uk-form-row uk-margin-top">

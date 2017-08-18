@@ -13,7 +13,8 @@ return [
 		'Spqr\\Shariff\\' => 'src'
 	],
 	
-	'nodes'  => [],
+	'nodes' => [],
+	
 	'routes' => [
 		'/api/shariff' => [
 			'name'       => '@shariff/api',
@@ -23,7 +24,9 @@ return [
 		]
 	],
 	
-	'widgets' => [],
+	'widgets' => [
+		'widgets/shariff.php'
+	],
 	
 	'menu' => [],
 	
@@ -46,6 +49,7 @@ return [
 	],
 	
 	'config' => [
+		'autoinsert'      => true,
 		'nodes'           => [],
 		'position'        => 'bottom',
 		'orientation'     => 'horizontal',
@@ -98,20 +102,25 @@ return [
 			$app->on(
 				'view.content',
 				function( $event, $scripts ) use ( $app ) {
-					$app[ 'styles' ]->add(
-						'fontawesome',
-						'spqr/shariff:app/assets/components-font-awesome/css/font-awesome.min.css'
-					);
-					$app[ 'styles' ]->add(
-						'spqr/shariff',
-						'spqr/shariff:app/assets/shariff/build/shariff.min.css'
-					);
-					$app[ 'scripts' ]->add(
-						'spqr/shariff',
-						'spqr/shariff:app/assets/shariff/build/shariff.min.js',
-						[ 'jquery' ],
-						[ 'defer' => true ]
-					);
+					if ( $this->config[ 'autoinsert' ] && ( !$this->config[ 'nodes' ] || in_array(
+								$app[ 'node' ]->id,
+								$this->config[ 'nodes' ]
+							) ) ) {
+						$app[ 'styles' ]->add(
+							'fontawesome',
+							'spqr/shariff:app/assets/components-font-awesome/css/font-awesome.min.css'
+						);
+						$app[ 'styles' ]->add(
+							'spqr/shariff',
+							'spqr/shariff:app/assets/shariff/build/shariff.min.css'
+						);
+						$app[ 'scripts' ]->add(
+							'spqr/shariff',
+							'spqr/shariff:app/assets/shariff/build/shariff.min.js',
+							[ 'jquery' ],
+							[ 'defer' => true ]
+						);
+					}
 				}
 			);
 		},

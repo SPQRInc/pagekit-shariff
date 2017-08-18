@@ -1,0 +1,1 @@
+<div class='shariff' <?= $datastring ?>></div>
