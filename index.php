@@ -30,17 +30,7 @@ return [
 	
 	'menu' => [],
 	
-	'permissions' => [
-		'linker: manage settings'   => [
-			'title' => 'Manage settings'
-		],
-		'linker: manage targets'    => [
-			'title' => 'Manage targets'
-		],
-		'linker: manage statistics' => [
-			'title' => 'Manage statistics'
-		]
-	],
+	'permissions' => [	],
 	
 	'settings' => 'shariff-settings',
 	
