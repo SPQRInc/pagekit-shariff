@@ -137,16 +137,12 @@ return [
 		$datastring = implode( " ", $data );
 		
 		$app[ 'styles' ]->add(
-			'fontawesome',
-			'spqr/shariff:app/assets/components-font-awesome/css/font-awesome.min.css'
-		);
-		$app[ 'styles' ]->add(
 			'spqr/shariff',
-			'spqr/shariff:app/assets/shariff/build/shariff.min.css'
+			'spqr/shariff:app/assets/shariff/build/shariff.complete.css'
 		);
 		$app[ 'scripts' ]->add(
 			'spqr/shariff',
-			'spqr/shariff:app/assets/shariff/build/shariff.min.js',
+			'spqr/shariff:app/assets/shariff/build/shariff.complete.js',
 			[ 'jquery' ],
 			[ 'defer' => true ]
 		);
