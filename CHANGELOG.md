@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4
+
+- FIX: Fixed unnecessary content
+- FIX: Fixed fontawesome dependency (as it's delivered by shariff)
+
 ## 1.0.3
 
 - ADD: Added widget mode
