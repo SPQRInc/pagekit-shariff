@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+- ADD: Added shariff version 2.0
+
 ## 1.0.4
 
 - FIX: Fixed unnecessary content
