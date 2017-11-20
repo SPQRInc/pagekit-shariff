@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6
+
+- FIX: Uses shariff-backend-php 7.0.1, which allows to use latest Facebook API
+- ADD: Added PSR1/2 code styling
+
 ## 1.0.5
 
 - ADD: Added shariff version 2.0
