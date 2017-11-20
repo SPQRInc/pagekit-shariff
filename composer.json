@@ -17,7 +17,7 @@
     "scripts": "scripts.php"
   },
   "require": {
-    "heise/shariff": "^7.0",
+    "heise/shariff": "^7.0.1",
     "php": "^5.6 || ^7.0",
     "guzzlehttp/guzzle": "^6.1",
     "guzzlehttp/psr7": "^1.4",
