@@ -47,7 +47,7 @@
                 <select class="uk-form-large" v-model="package.config.lang">
                     <option value="bg">{{ 'Bulgarian' | trans }}</option>
                     <option value="de">{{ 'German' | trans }}</option>
-                    <option value="en">{{ 'English' | trans  }}</option>
+                    <option value="en">{{ 'English' | trans }}</option>
                     <option value="es">{{ 'Spanish' | trans }}</option>
                     <option value="fi">{{ 'Finnish' | trans }}</option>
                     <option value="hr">{{ 'Croatian' | trans }}</option>
@@ -71,16 +71,20 @@
             <span class="uk-form-label">{{ 'Services' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.facebook"> {{ 'Facebook' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.facebook"> {{ 'Facebook' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.twitter"> {{ 'Twitter' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.twitter"> {{ 'Twitter' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.googleplus"> {{ 'Google Plus' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.googleplus"> {{ 'Google Plus' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.linkedin"> {{ 'LinkedIn' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.linkedin"> {{ 'LinkedIn' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="package.config.services.pinterest"> {{ 'Pinterest' | trans }}</label>
@@ -89,37 +93,46 @@
                     <label><input type="checkbox" v-model="package.config.services.xing"> {{ 'Xing' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.addthis"> {{ 'Add This' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.addthis"> {{ 'Add This' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.tumblr"> {{ 'Tumblr' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.tumblr"> {{ 'Tumblr' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.flattr"> {{ 'Flattr' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.flattr"> {{ 'Flattr' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.diaspora"> {{ 'Diaspora' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.diaspora"> {{ 'Diaspora' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.reddit"> {{ 'Reddit' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.reddit"> {{ 'Reddit' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.stumbleupon"> {{ 'Stumbleupon' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.stumbleupon"> {{ 'Stumbleupon' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="package.config.services.weibo"> {{ 'Weibo' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.tencent_weibo"> {{ 'Tencent Weibo' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.tencent_weibo"> {{ 'Tencent Weibo' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="package.config.services.qzone"> {{ 'Qzone' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.whatsapp"> {{ 'WhatsApp' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.whatsapp"> {{ 'WhatsApp' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="package.config.services.threema"> {{ 'Threema' | trans }}</label>
+                    <label><input type="checkbox"
+                                  v-model="package.config.services.threema"> {{ 'Threema' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="package.config.services.mail"> {{ 'Mail' | trans }}</label>
@@ -193,11 +206,13 @@
         </div>
         <div class="uk-form-row uk-margin-top">
             <div class="uk-form-controls">
-                <button class="uk-button uk-button-primary" @click="save">{{ 'Save' | trans }}</button>
-            </div>
+                <button class="uk-button uk-button-primary"
+                @click="save">{{ 'Save' | trans }}
+            </button>
         </div>
     </div>
-</template>
+</div>
+        </template>
 
 <script>
 
@@ -208,7 +223,7 @@ module.exports = {
 	props: ['package'],
 
 	methods: {
-		save: function save() {
+		save: function save () {
 			this.$http.post ('admin/system/settings/config', {
 				name: 'spqr/shariff',
 				config: this.package.config

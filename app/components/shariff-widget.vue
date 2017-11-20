@@ -11,7 +11,8 @@
                 </div>
             </div>
             <div class="uk-form-row">
-                <label for="form-overwrite-orientation" class="uk-form-label">{{ 'Overwrite Orientation' | trans }}</label>
+                <label for="form-overwrite-orientation"
+                       class="uk-form-label">{{ 'Overwrite Orientation' | trans }}</label>
                 <div class="uk-form-controls uk-form-controls-text">
                     <input id="form-overwrite-orientation" type="checkbox" v-model="widget.data.overwrite_orientation">
                 </div>
@@ -91,7 +92,8 @@
                                       v-model="widget.data.services.twitter"> {{ 'Twitter' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.googleplus"> {{ 'Google Plus' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.googleplus"> {{ 'Google Plus' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox"
@@ -109,31 +111,36 @@
                                       v-model="widget.data.services.addthis"> {{ 'Add This' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.tumblr"> {{ 'Tumblr' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.tumblr"> {{ 'Tumblr' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.flattr"> {{ 'Flattr' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.flattr"> {{ 'Flattr' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox"
                                       v-model="widget.data.services.diaspora"> {{ 'Diaspora' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.reddit"> {{ 'Reddit' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.reddit"> {{ 'Reddit' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox"
                                       v-model="widget.data.services.stumbleupon"> {{ 'Stumbleupon' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.weibo"> {{ 'Weibo' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.weibo"> {{ 'Weibo' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox"
                                       v-model="widget.data.services.tencent_weibo"> {{ 'Tencent Weibo' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.qzone"> {{ 'Qzone' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.qzone"> {{ 'Qzone' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox"
@@ -147,7 +154,8 @@
                         <label><input type="checkbox" v-model="widget.data.services.mail"> {{ 'Mail' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
-                        <label><input type="checkbox" v-model="widget.data.services.print"> {{ 'Print' | trans }}</label>
+                        <label><input type="checkbox"
+                                      v-model="widget.data.services.print"> {{ 'Print' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
                         <label><input type="checkbox" v-model="widget.data.services.info"> {{ 'Info' | trans }}</label>
@@ -212,11 +220,11 @@ module.exports = {
 			overwrite_services: false,
 			overwrite_backend: false,
 			orientation: 'horizontal',
-            theme: 'standard',
+			theme: 'standard',
 			lang: 'en',
 			flattr_category: '',
 			flattr_user: '',
-            backend: false,
+			backend: false,
 			services: {
 				facebook: true,
 				twitter: true,

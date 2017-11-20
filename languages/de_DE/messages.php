@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'Shariff Settings' => 'Shariff Einstellungen',
-	'Title'            => 'Titel',
+    'Shariff Settings' => 'Shariff Einstellungen',
+    'Title'            => 'Titel',
 ];
