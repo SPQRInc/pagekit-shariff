@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7
+
+- ADD: Replaced bower with npm/webpack
+
 ## 1.0.6
 
 - FIX: Uses shariff-backend-php 7.0.1, which allows to use latest Facebook API
