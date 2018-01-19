@@ -150,9 +150,9 @@ return [
         $datastring = implode(" ", $data);
         
         $app['styles']->add('spqr/shariff',
-            'spqr/shariff:app/assets/shariff/build/shariff.complete.css');
+            'spqr/shariff:app/assets/shariff/shariff.complete.css');
         $app['scripts']->add('spqr/shariff',
-            'spqr/shariff:app/assets/shariff/build/shariff.complete.js',
+            'spqr/shariff:app/assets/shariff/shariff.complete.js',
             ['jquery'], ['defer' => true]);
         
         return $app->view('spqr/shariff/widget/shariff.php',

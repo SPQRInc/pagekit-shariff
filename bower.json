@@ -1,7 +1,0 @@
-{
-  "name": "pagekit-shariff",
-  "dependencies": {
-    "shariff": "*"
-  },
-  "private": true
-}

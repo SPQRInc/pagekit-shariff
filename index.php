@@ -93,9 +93,9 @@ return [
                         || in_array($app['node']->id, $this->config['nodes']))
                 ) {
                     $app['styles']->add('spqr/shariff',
-                        'spqr/shariff:app/assets/shariff/build/shariff.complete.css');
+                        'spqr/shariff:app/assets/shariff/shariff.complete.css');
                     $app['scripts']->add('spqr/shariff',
-                        'spqr/shariff:app/assets/shariff/build/shariff.complete.js',
+                        'spqr/shariff:app/assets/shariff/shariff.complete.js',
                         ['jquery'], ['defer' => true]);
                 }
             });
