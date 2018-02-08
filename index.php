@@ -71,6 +71,7 @@ return [
             "qzone"         => false,
             "whatsapp"      => false,
             "threema"       => false,
+            "vk"            => false,
             "mail"          => false,
             "info"          => true,
         ],

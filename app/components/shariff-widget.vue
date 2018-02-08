@@ -151,6 +151,9 @@
                                       v-model="widget.data.services.threema"> {{ 'Threema' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">
+                        <label><input type="checkbox" v-model="widget.data.services.vk"> {{ 'VK' | trans }}</label>
+                    </p>
+                    <p class="uk-form-controls-condensed">
                         <label><input type="checkbox" v-model="widget.data.services.mail"> {{ 'Mail' | trans }}</label>
                     </p>
                     <p class="uk-form-controls-condensed">

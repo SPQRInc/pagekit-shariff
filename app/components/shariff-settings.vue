@@ -135,6 +135,9 @@
                                   v-model="package.config.services.threema"> {{ 'Threema' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">
+                    <label><input type="checkbox" v-model="package.config.services.vk"> {{ 'VK' | trans }}</label>
+                </p>
+                <p class="uk-form-controls-condensed">
                     <label><input type="checkbox" v-model="package.config.services.mail"> {{ 'Mail' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed">

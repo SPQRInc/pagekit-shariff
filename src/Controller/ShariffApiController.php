@@ -26,9 +26,6 @@ class ShariffApiController
         foreach ($config['services'] as $key => $service) {
             if ($service) {
                 switch ($key) {
-                    case 'googleplus' :
-                        $services[] = "GooglePlus";
-                        break;
                     case 'linkedin' :
                         $services[] = "LinkedIn";
                         break;
@@ -46,6 +43,9 @@ class ShariffApiController
                         break;
                     case 'xing' :
                         $services[] = "Xing";
+                        break;
+                    case 'vk	' :
+                        $services[] = "Vk";
                         break;
                     case 'addthis' :
                         $services[] = "AddThis";
