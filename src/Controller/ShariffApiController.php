@@ -44,7 +44,7 @@ class ShariffApiController
                     case 'xing' :
                         $services[] = "Xing";
                         break;
-                    case 'vk	' :
+                    case 'vk' :
                         $services[] = "Vk";
                         break;
                     case 'addthis' :
