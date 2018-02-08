@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.8
+
+- FIX: Removed GooglePlus from PHP-backend (counter) as it's no longer supported by Google
+- ADD: Added Vk
+- FIX: Updated php-backend to latest version
+
 ## 1.0.7
 
 - ADD: Replaced bower with npm/webpack
