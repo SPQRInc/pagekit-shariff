@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.9
+
+- FIX: Fixed different issues in shariff-php-backend by using 7.1.1
+- FIX: Fixed different issues in shariff by updating to 2.1.3
+- FIX: Added margin
+- ADD: Added Info-Tab to the settings
+
 ## 1.0.8
 
 - FIX: Removed GooglePlus from PHP-backend (counter) as it's no longer supported by Google
