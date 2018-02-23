@@ -1,1 +1,1 @@
-<div class='shariff' <?= $datastring ?>></div>
+<div class='shariff uk-margin' <?= $datastring ?>></div>

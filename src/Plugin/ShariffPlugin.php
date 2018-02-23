@@ -145,7 +145,7 @@ class ShariffPlugin implements EventSubscriberInterface
                 }
                 
                 $datastring = implode(" ", $data);
-                $shariff    = "<div class='shariff' $datastring></div>";
+                $shariff    = "<div class='shariff uk-margin' $datastring></div>";
                 
                 if ($config['position'] == 'top') {
                     $content = $shariff.$content;
